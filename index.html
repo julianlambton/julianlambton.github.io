@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wilman Julian Casilimas Beltran | Software Developer</title>
+  <meta name="description" content="Portfolio of Wilman Julian Casilimas Beltran, a junior software and backend developer in Toronto building full-stack TypeScript applications and backend APIs." />
+  <meta name="theme-color" content="#050805" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050805'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='%23B8F53D'%3EWJ%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 2D fallback canvas (only used if WebGL fails) -->
+  <canvas id="stream-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAV -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <span class="nav-brand">WJ<span class="accent">.</span></span>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </nav>
+
+  <!-- HERO / ABOUT -->
+  <section id="about" class="section hero-section">
+    <div class="container hero-grid reveal">
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="photo.jpg" alt="Portrait of Wilman Julian Casilimas Beltran" width="220" height="220" decoding="async"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'hero-photo-fallback',textContent:'WJ'}))" />
+      </div>
+      <div class="hero-text">
+        <p class="mono-label">Available for work · Toronto, ON</p>
+        <h1><span class="name-line">Wilman Julian</span> <span class="name-line">Casilimas Beltran</span></h1>
+        <p class="hero-roles">Junior Programmer &nbsp;/&nbsp; Backend Developer &nbsp;/&nbsp; Software Developer</p>
+        <p class="hero-bio">
+          Computer Programmer with a diploma from Lambton College (2025), building full-stack TypeScript applications and backend APIs. Fluent in English and Spanish. Passionate about clean architecture, databases, and software that solves real problems.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary">See Projects</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+          <a href="CV.pdf" class="btn-ghost" download>Download CV</a>
+        </div>
+        <ul class="social-row" aria-label="Social links">
+          <li><a class="social-btn" href="https://github.com/julianlambton" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+          </a></li>
+          <li><a class="social-btn" href="https://www.linkedin.com/in/julian-beltran-to/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="7" y="10" width="2" height="7" fill="currentColor"/><circle cx="8" cy="7.2" r="1.2" fill="currentColor"/><path d="M11.5 17v-7h2v1c.5-.8 1.3-1.2 2.3-1.2 1.8 0 2.7 1.1 2.7 3V17h-2v-3.7c0-.9-.4-1.4-1.2-1.4s-1.3.6-1.3 1.5V17z" fill="currentColor"/></svg>
+          </a></li>
+          <li><a class="social-btn" href="https://www.instagram.com/julian_6x/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+          </a></li>
+          <li><a class="social-btn" href="mailto:julianbeca1230@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><polyline points="2,4 12,13 22,4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="mono-label reveal">Selected Work</p>
+      <h2 class="section-title reveal"><em class="serif-em">Projects</em></h2>
+
+      <!-- Scouting Report App -->
+      <div class="project-card-wrap reveal">
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-tag">Full-Stack</span>
+              <span class="project-status">In Progress</span>
+            </div>
+            <h3 class="project-title">Scouting Report App</h3>
+            <p class="project-desc">
+              A full-stack TypeScript scouting platform with a React + Vite dashboard, Node.js/Express backend, and PostgreSQL database. Features concurrent data fetching of player profiles and scout evaluations, a live POST form that updates the UI instantly, and an enterprise-style modular backend separating DB connections from route handlers. Currently expanding the CRUD cycle with a <code>DELETE /api/reports/:id</code> endpoint.
+            </p>
+            <div class="project-schema">
+              <span class="mono-label">Schema</span>
+              <div class="schema-chips">
+                <span>players</span>
+                <span>teams</span>
+                <span>scouts</span>
+                <span>scout_reports</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Vite</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MSRK Lifecare Foundation -->
+      <div class="project-card-wrap reveal">
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-tag">Web</span>
+              <span class="project-status">Volunteer · Ongoing</span>
+            </div>
+            <h3 class="project-title">MSRK Lifecare Foundation Website</h3>
+            <p class="project-desc">
+              Volunteering since September 2026 to build and maintain the website for MSRK Lifecare Foundation, a nonprofit supporting people affected by kidney disease and their families and caregivers. I built the site from scratch and made it responsive. I continue to work with the team, updating content, publishing posts and making changes as the foundation grows.
+            </p>
+            <a class="project-link" href="https://msrklifecarefoundation.org/" target="_blank" rel="noopener noreferrer">Visit site <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smart Agriculture -->
+      <div class="project-card-wrap reveal">
+        <div class="project-card">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-tag">Backend</span>
+              <span class="project-status">Academic Project</span>
+            </div>
+            <h3 class="project-title">Smart Agriculture System</h3>
+            <p class="project-desc">
+              A TypeScript and Node.js backend system for modern farm management. Handles sensor data for environmental monitoring, automates irrigation based on real-time sensor readings and weather forecasts, includes a disease detection module, and manages drone operations and tracking. Structured as a reusable NPM package.
+            </p>
+            <div class="project-tech">
+              <span>TypeScript</span>
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS (wheel on desktop, snap carousel on mobile; built by script.js) -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="mono-label reveal">Skills &amp; Technologies</p>
+      <h2 class="section-title reveal">My <em class="serif-em">Skills</em></h2>
+      <p class="stack-intro reveal">Select a skill to see what I’ve done with it.</p>
+
+      <div class="skills reveal" id="skills-widget" data-active="-1">
+        <div class="wheel" id="wheel">
+          <div class="wheel-ring" id="wheel-ring" role="group" aria-label="Skills"></div>
+          <div class="wheel-center" id="wheel-center" aria-live="polite">
+            <h3 id="skill-title">Select a skill</h3>
+            <p id="skill-desc">Click any skill to see what I’ve done with it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-block reveal" id="contact-block">
+        <p class="mono-label contact-mono-label">Let’s build something</p>
+        <h2 class="contact-heading">Get In Touch</h2>
+        <div class="contact-links">
+          <div class="contact-email-row">
+            <a href="mailto:julianbeca1230@gmail.com" class="contact-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+                <rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="#050805" stroke-width="1.8"/>
+                <polyline points="2,4 12,13 22,4" fill="none" stroke="#050805" stroke-width="1.8"/>
+              </svg>
+              julianbeca1230@gmail.com
+            </a>
+            <button type="button" class="copy-email" id="copy-email" data-email="julianbeca1230@gmail.com">Copy email</button>
+          </div>
+          <a href="https://github.com/julianlambton" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+              <path fill="#050805" d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/>
+            </svg>
+            github.com/julianlambton
+          </a>
+          <a href="https://www.linkedin.com/in/julian-beltran-to/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+              <rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="#050805" stroke-width="1.8"/>
+              <rect x="7" y="10" width="2" height="7" fill="#050805"/>
+              <circle cx="8" cy="7.2" r="1.2" fill="#050805"/>
+              <path d="M11.5 17v-7h2v1c.5-.8 1.3-1.2 2.3-1.2 1.8 0 2.7 1.1 2.7 3V17h-2v-3.7c0-.9-.4-1.4-1.2-1.4s-1.3.6-1.3 1.5V17z" fill="#050805"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/julian_6x/" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="22" height="22">
+              <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#050805" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="#050805" stroke-width="1.8"/>
+              <circle cx="17.2" cy="6.8" r="1.1" fill="#050805"/>
+            </svg>
+            Instagram
+          </a>
+          <span class="contact-city">
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="20" height="20">
+              <path fill="none" stroke="#050805" stroke-width="1.8" d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5" fill="none" stroke="#050805" stroke-width="1.6"/>
+            </svg>
+            Toronto, ON, Canada
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <ul class="social-row social-row-center" aria-label="Social links">
+      <li><a class="social-btn" href="https://github.com/julianlambton" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+      </a></li>
+      <li><a class="social-btn" href="https://www.linkedin.com/in/julian-beltran-to/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="7" y="10" width="2" height="7" fill="currentColor"/><circle cx="8" cy="7.2" r="1.2" fill="currentColor"/><path d="M11.5 17v-7h2v1c.5-.8 1.3-1.2 2.3-1.2 1.8 0 2.7 1.1 2.7 3V17h-2v-3.7c0-.9-.4-1.4-1.2-1.4s-1.3.6-1.3 1.5V17z" fill="currentColor"/></svg>
+      </a></li>
+      <li><a class="social-btn" href="https://www.instagram.com/julian_6x/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg>
+      </a></li>
+      <li><a class="social-btn" href="mailto:julianbeca1230@gmail.com" aria-label="Email" title="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><polyline points="2,4 12,13 22,4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+      </a></li>
+    </ul>
+    <p class="mono-label">© <span id="year">2026</span> Wilman Julian Casilimas Beltran &nbsp;·&nbsp; Built with HTML, CSS &amp; vanilla JS</p>
+  </footer>
+
+  <script src="stream.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
